@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: #333;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 350px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: #5563de;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #3948b9;
+  transform: scale(1.05);
+}
+
+#result {
+  margin-top: 25px;
+  font-size: 17px;
+  font-weight: 500;
+  background: #f8f9ff;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+/* Dark Mode */
+/* 🌙 DARK MODE FIX */
+body.dark {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+body.dark .container {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+body.dark input[type="date"] {
+  background-color: #333;
+  color: white;
+  border: 2px solid #666;
+}
+
+body.dark button {
+  background-color: #ff9f43;
+}
+
+body.dark button:hover {
+  background-color: #e67e22;
+}
+
+/* ✅ FIX RESULT BOX IN DARK MODE */
+body.dark #result {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f8f8f8;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
